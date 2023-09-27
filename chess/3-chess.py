@@ -25,3 +25,8 @@ if __name__ == "__main__":
     for j in range(opponents):
         main(j)
     print(f"Finished in {round(time.perf_counter() - start_time)} secs")
+
+# อธิบายการทำงานแบบ synchonous
+# แบบ synchonous Judit จะเล่นทีละเกมส์ จะไม่ย้ายไปเกมส์ถัดไปจนกว่าเกมส์ที่เล่นปัจจุบันจะจบ 
+# ซึ่งเเต่ละเกมส์จะใช้เวลา ((55 + 5) * 30) = 30 นาที(1800 วินาที) ซึ่งเวลาที่ใช้ในการเล่นเกมส์ทั้งหมดจะเท่ากับ 
+# 24 opponents * 30 นาที = 720 นาที หรือ 12 ชั่วโมง
